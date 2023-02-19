@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@500&display=swap');
+
+body{
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=
+		Header CSS 
+ =-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.alamin-header{
+	background: transparent;
+	padding: 20px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.alamin-nav ul{
+	display: flex;
+	justify-content: flex-end;
+}
+.alamin-nav ul li a{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	padding: 0 20px;
+}
+.alamin-nav ul li a:hover{
+	color: #dc6774;
+	transition: .3s
+}
+.alamin-menu-icons{
+	display: none;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=
+		Banner CSS 
+ =-=-=-=-=-=-=-=-=-=-=-=-= */
+.alamin-banner{
+	background: url('../images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+	
+}
+.alamin-banner-overlay{
+	background:rgba(0,0,0,0.7);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.alamin-banner-text{
+	text-align: center;
+}
+.alamin-banner-text em{
+	color: #fff;
+	font-size: 30px;
+}
+.alamin-banner-text h1{
+	color: #fff;
+	font-size: 70px;
+	font-weight: 700;
+}
+.alamin-banner-text h1 span{
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=
+		About CSS 
+ =-=-=-=-=-=-=-=-=-=-=-=-= */
+.alamin-about{
+	padding: 120px 0;
+	background: #454141;
+}
+
+.alamin-about-text em{
+	color: #fff;
+	font-size: 30px;
+}
+.alamin-about-text h2{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+.alamin-about-text p{
+	color: #fff;
+	font-size: 14px;
+}
+.alamin-about-text a{
+	background: #dc6774;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.alamin-about-img{
+	position: relative;
+}
+.alamin-about-img img{
+	z-index: 99;
+	position: relative;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=
+		Service CSS 
+ =-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.alamin-service{
+	background: #ffffff;
+	padding: 120px 0;
+}
+.alamin-title{
+	width: 70%;
+	margin: 0 auto 50px;
+	text-align: center;
+}
+.alamin-title h2{
+	font-weight: 700;
+	font-size: 35px;
+	color: #252525;
+	text-transform: capitalize;
+	display: inline-block;
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.alamin-title h2:before{
+	content: '';
+	display: block;
+	width: 120px;
+	height: 2px;
+	background: #009cff;
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+}
+
+.alamin-title h2:after{
+	content: '';
+	display: block;
+	width: 120px;
+	height: 2px;
+	background: #85d0ff;
+	position: absolute;
+	bottom: -5px;
+	left: 40%;
+}
+
+.alamin-title p{
+	font-size: 14px;
+	color: #252525;
+}
+
+.alamin-service-items{
+	text-align: center;
+}
+.alamin-service-items img{
+	margin: 0 auto 15px;
+}
+.alamin-service-items h5{
+	color: #3f3f3f;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.alamin-service-items p{
+	color: #3f3f3f;
+	font-size: 14px;
+}
+
+
+
+/* Foods */
+
+.section-title h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bolder;
+}
+.foods{
+	background: #fff;
+	padding: 100px 0;
+	box-shadow: 0 5px 10px #bdc3c7;
+}
+.food-items{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.item{
+	width: 32%;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.food-overlay{
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .4s;
+}
+.food-name{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	color: #fff;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: .4s;
+}
+.food-name span{
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	white-space: nowrap;
+}
+.food-price{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: .4s;
+}
+.food-price span{
+	color: #fff;
+}
+
+.food-price a{
+	color: #fff;
+}
+.food-price a:hover{
+	color: #fec007;;
+}
+
+.food-overlay:hover{
+	opacity: .7;
+}
+
+.food-overlay:hover .food-name{
+	opacity: 1;
+	top: 40%;
+}
+.food-overlay:hover .food-price{
+	opacity: 1;
+	top: 50%;
+}
+.section-title h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+
+/*=================
+	contact-form
+===================*/
+
+.contact{
+	padding: 100px 0;
+	background: #eeeeee;
+}
+.contact h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bolder;
+}
+.contact-content{
+	display: flex;
+	align-items: center;
+}
+.contact-logo{
+	width: 45%;
+}
+.our-form{
+	background: #2C3A47;
+	width: 50%;
+	padding: 25px;
+	margin: 50px 0;
+}
+.our-form label{
+	color: #fff;
+}
+.user{
+	display: flex;
+	justify-content: space-between;
+}
+.user input{
+	padding-right: 10px;
+	width: 48%;
+	margin-bottom: 20px;
+}
+
+/*===========================
+			FOOTER
+  ===========================*/
+
+footer{
+	background: #34495e;
+	padding: 20px 0;
+}
+.footer-area{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-left p{
+	color: #f1c40f;
+}
+.footer-social ul{
+	display: flex;
+	
+}
+.footer-social ul li a{
+	padding-left: 25px;
+	color: #fff;
+	font-size: 25px;
+}
+

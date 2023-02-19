@@ -1,0 +1,47 @@
+@media (max-width: 991px) {
+	.alamin-menu-icons{
+		display: block;
+		color: #fff;
+		text-align: right;
+	}
+	.alamin-menu-icons span{
+		font-size: 25px;
+	}
+	span.alamin-menu-close{
+		display: none;
+	}
+
+	.alamin-nav{
+		background: transparent;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		display: none;
+	}
+	.alamin-nav ul{
+		display: block;
+	}
+	.alamin-nav ul li a{
+		display: block;
+		padding: 10px 20px;
+	}
+	
+
+	.alamin-about-img{
+		width: 75%;
+		margin: 100px auto 0;
+	}
+
+	.alamin-about-img:before, .alamin-about-img:after{
+		width: 150px;
+		height: 75px;
+	}
+	.item img{
+		width: 100%;
+		
+
+	}
+
+
+}
